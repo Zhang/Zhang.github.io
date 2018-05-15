@@ -1,0 +1,167 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0; 
+}
+
+/**
+ * Basic styling
+ */
+body {
+  font-family: "Montserrat", "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #111;
+  background-color: #fafafa;
+  -webkit-text-size-adjust: 100%; 
+}
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, iframe {
+  margin-bottom: 15px; }
+
+h2 {
+  margin-bottom: 30px; }
+
+p, .gist, blockquote, ol, ul, figure, .highlight {
+  margin-bottom: 30px; }
+
+/**
+ * Lists
+ */
+ul, ol {
+  margin-left: 30px; }
+
+li > ul,
+li > ol {
+  margin-bottom: 0; }
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600; }
+
+/**
+ * Links
+ */
+a {
+  color: rgb(118,121,213);
+  text-decoration: none; }
+  a:visited {
+    color: #0d1292; }
+
+/**
+ * Wrapper
+ */
+.wrapper {
+  max-width: -webkit-calc(650px - (30px * 2));
+  max-width: calc(650px - (30px * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px; }
+  @media screen and (max-width: 650px) {
+    .wrapper {
+      max-width: -webkit-calc(650px - (30px));
+      max-width: calc(650px - (30px));
+      padding-right: 15px;
+      padding-left: 15px; } }
+
+/**
+ * Clearfix
+ */
+.wrapper:after, .footer-col-wrapper:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/**
+ * Icons
+ */
+.icon > svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle; }
+  .icon > svg path {
+    fill: #777; }
+
+sup {
+  line-height: 0em; }
+
+.small-caps {
+  font-variant: small-caps; }
+
+.title, .main-title {
+  font-size: 22px;
+  line-height: 45px; 
+  font-weight: 500;
+  color: #000; 
+  margin: 10px 0;}
+
+.main-title { font-size: 30px; }
+.header-wrap {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/**
+ * Page content
+ */
+
+.page-heading {
+  font-size: 24px;
+  margin-top: 60px; }
+
+.post-list {
+  margin-left: 0;
+  list-style: none; }
+  .post-list > li {
+    margin-bottom: 15px; }
+  .post-list h2 {
+    margin-bottom: 0px; }
+
+.post-list-year {
+  font-weight: 400;
+  margin-top: 45px; }
+  .post-list-year:not(:first-child) {
+    margin-top: 30px; }
+
+.post-meta {
+  font-size: 14px;
+  color: #777; }
+
+.post-link {
+  display: block;
+  font-size: 18px; }
+
+.home p {
+  font-family: "Crimson Text", Sentinel, Times, "Times New Roman", serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 18px;
+  line-height: 1.6em; 
+}
+
+.separate {
+  border-top: 0;
+  border-bottom: 1px inset #afafaf;
+  margin: 20px 0;
+}
+
+p.no-margin {
+  margin: 0;
+}
+
+.logo { 
+  width: 100px;
+}
