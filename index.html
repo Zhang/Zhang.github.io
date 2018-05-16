@@ -62,7 +62,7 @@ mixpanel.init("391f33edf14bccaafef1c1b13b80222d");</script><!-- end Mixpanel -->
     var params = new URLSearchParams(window.location.search)
     var subreddit = subreddits[params.get('s')]
     var ad = ads[params.get('a')]
-
+    console.log(ad, subreddit)
     mixpanel.register({
       subreddit: subreddit,
       ad: ad,
@@ -72,7 +72,7 @@ mixpanel.init("391f33edf14bccaafef1c1b13b80222d");</script><!-- end Mixpanel -->
     $('a').click(function(e) {
       mixpanel.track(e.target.href)
     });
-    
+
     setTimeout(function() {
       mixpanel.track("Is reading");
     }, 5000)
