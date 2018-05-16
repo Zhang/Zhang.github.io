@@ -46,15 +46,33 @@ mixpanel.init("391f33edf14bccaafef1c1b13b80222d");</script><!-- end Mixpanel -->
     </div>
   </body>
   <script>
+    var subreddits = {
+      '1': 'pharmacy',
+      '2': 'nursing',
+      '3': 'medicine',
+      '4': 'healthcare',
+      '5': 'cancer',
+      '6': 'talesfrompharmacy',
+    }
+    var ads = {
+      '1': 'toast',
+      '2': 'LPT'
+    }
+
+    var params = new URLSearchParams(window.location.search)
+    var subreddit = subreddits[params.get('s')]
+    var ad = ads[params.get('a')]
+
     mixpanel.register({
-      source: new URLSearchParams(window.location.search).get('source')
-      ad: new URLSearchParams(window.location.search).get('ad')
+      subreddit: subreddit,
+      ad: ad,
     });
-    window.location.search = "";
+
     mixpanel.track("Visited");
     $('a').click(function(e) {
       mixpanel.track(e.target.href)
     });
+    
     setTimeout(function() {
       mixpanel.track("Is reading");
     }, 5000)
