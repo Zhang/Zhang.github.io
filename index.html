@@ -48,7 +48,9 @@ mixpanel.init("391f33edf14bccaafef1c1b13b80222d");</script><!-- end Mixpanel -->
   <script>
     mixpanel.register({
       source: new URLSearchParams(window.location.search).get('source')
+      ad: new URLSearchParams(window.location.search).get('ad')
     });
+    window.location.search = "";
     mixpanel.track("Visited");
     $('a').click(function(e) {
       mixpanel.track(e.target.href)
