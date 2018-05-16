@@ -25,35 +25,33 @@ mixpanel.init("391f33edf14bccaafef1c1b13b80222d");</script><!-- end Mixpanel -->
     </div>
     <div class="wrapper">
       <div class="home">
-        <a class="title">We will build your Rx Inventory Management system. <i><b>Free.</b></i></a>
-        <p>We're <a target="_blank" href="https://www.linkedin.com/in/sqz684/">Scott</a> and <a target="_blank" href="https://www.linkedin.com/in/syam-palakurthy/">Syam</a>, healthcare technologists in the San Francisco Bay Area with >10 years of experience in the industry. We're building <a target="_blank" href="http://sama.health/">a company</a> to help providers manage their inventory and reduce medical waste.</p>
-
-        <a class="title">We believe in working closely with our end users.</a>
-        <p>My cofounder and I want to co-develop this tool with your practice. We win because we get valuable insights from getting an up-close perspective of your workflows while you get a tool customized to your needs.</p>
+        <a class="title">Custom Rx Inventory Management system. Free.</a>
+        <p>We're <a target="_blank" href="https://www.linkedin.com/in/sqz684/">Scott</a> and <a target="_blank" href="https://www.linkedin.com/in/syam-palakurthy/">Syam</a>, healthcare technologists in the San Francisco Bay Area with >10 years of experience in the industry. We're building <a target="_blank" href="http://sama.health/">a company</a> to help providers manage their inventory and reduce medical waste and we want to customize our software to your workflow.</p> 
 
         <a class="title">Good candidates with real challenges.</a>
-        <p>We want to work with providers where getting Rx inventory management right is vital. Specifically, we're focused on clinics that administer a high volume of infusible or injectable drugs. We're open to other providers, but we want to make sure we're solving a critical problem for you. Also, we can only work with providers in the United States.</p>
+        <p>We are looking for US providers where Rx inventory management is vital. Specifically, we're focused on clinics that administer a high volume of infusible or injectable drugs. We're open to other providers, but we want to make sure we're solving a critical problem for you.</p>
         <hr class="separate">
-        <p>
-          If you think your site is a good candidate, please <a href="mailto:scottzhang235@gmail.com?subject=Sama%20Health%20Inquiry">drop us an email</a>. We'd love for you to get to know us.
-        </p>
+        <p>If you think your site is a good candidate, please <a href="mailto:szhang@sama.health?subject=Sama%20Health%20Candidate">drop us an email</a> with a link to your practice and a description of how you currently manage inventory. We'd love to demo our product and get to know you.</p>
         <hr class="separate">
         <a class="title">FAQ</a>
-        <p><b>How long will this take?</b> This will take two months with three weeks spent onsite. Half our onsite time will be spent learning existing processes and half will be spent rolling out your custom tool. We will spend as much time as necessary to perfect your experience, but we believe two months is enough from our past experiences.</p>
+        <p><b>What will I need to do?</b> We will need to be onsite for one week. Two days will be spent learning your existing processes and the remaining time will be spent spent rolling out our tool and training your staff. Of course, if one week isn't enough, we will spend as much time as necessary to perfect your experience.</p>
+        <p><b>What are you getting out of this?</b> The last 20% of product development is always the hardest. We're looking for early partners who are excited by a custom tool and can help us stress test our product in the real world.</p>
         <p><b>What are your healthcare experiences?</b> We've built HIPAA compliant software at <a href="https://www.medisas.com" target="_blank">Medisas</a> and <a href="https://home.clearcosthealth.com/" target="_blank">Clear Cost Health</a>. Furthermore, we've developed custom software for <a href="http://hanaholistic.com/" target="_blank">Hana Holistic</a>, <a href="http://www.benlittlejohnmd.com/" target="_blank">Littlejohn Medical Clinic</a>, and <a target="_blank" href="http://www.drsarma.com/">the Sarma Pleasanton Medical Clinic</a>. Hospital systems we've worked at, include: <a href="https://www.choc.org/" target="_blank">CHOC Childrens</a> and <a href="http://www.missouribaptist.org/" target="_blank">Missouri Baptist Medical Center.</a></p>
 
-        <p><b>What about your background in process improvement?</b> We are both uniquely qualified in process improvement. Earlier in his career, Scott worked with a <a target="_blank" href="https://www.yelp.com/biz/bonsoiree-chicago-2">Michelin Star</a> restaurant reduce food waste by optimizing their ordering workflows. More recently, he built <a target="_blank" href="http://medisas.com/intelligence">systems for hospitals to manage patient flows</a> and have built tools for our team at Medisas to automate deployments. Early in Syam’s career, he helped <a target="_blank" href="http://target.com">Target</a> make improvements to its supply chain for paper goods. Additionally, through consulting work at <a href="http://bain.com" target="_blank">Bain & Company</a>, he helped semiconductor and entertainment companies capture tens of millions of dollars in savings through smarter equipment sourcing and knowledge sharing.</p>
-        
-        <p><b>What do I have to pay for?</b> Nothing. But we accept free food.</p>
+        <p><b>What do I have to pay for?</b> Nothing.</p>
+        <p><b>What will I have to pay for?</b> Nothing.</p>
 
-        <p><b>Where can I ask questions not covered here?</b> Feel free to <a href="mailto:scottzhang235@gmail.com?subject=Sama%20Health%20Questions">email us</a></p>
+        <p><b>Where can I ask questions not covered here?</b> Feel free to <a href="mailto:szhang@sama.health?subject=Sama%20Health%20Questions">email us</a></p>
       </div>
     </div>
   </body>
   <script>
+    mixpanel.register({
+      source: new URLSearchParams(window.location.search).get('source')
+    });
+    mixpanel.track("Visited");
     $('a').click(function(e) {
       mixpanel.track(e.target.href)
-    })
-    mixpanel.track("Visited")
+    });
   </script>  
 </html>
